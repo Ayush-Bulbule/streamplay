@@ -7,12 +7,15 @@ const HeroHeader = () => {
     <div className="md:py-4 md:px-10">
       <div className="flex items-center justify-center gap-x-8">
 
+
+      <Link href={'organization'} className='tracking-wider'>
+          Organization
+        </Link>
+
         <Link href={'tournaments'} className='tracking-wider'>
           Tournaments
         </Link>
-        <Link href={'tournaments'} className='tracking-wider'>
-          Our Sponser
-        </Link>
+        
 
         <Image src="/hero-img.png" alt="logo" width={140} height={140} />
 
@@ -22,6 +25,11 @@ const HeroHeader = () => {
         <Link href={'tournaments'} className='tracking-wider'>
           Contact Us
         </Link>
+
+
+        
+
+      
 
       </div>
     </div>

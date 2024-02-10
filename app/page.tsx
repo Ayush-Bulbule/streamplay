@@ -1,11 +1,13 @@
 import React from 'react'
 import { Outfit } from 'next/font/google'
 import HeroHeader from '../components/hero/heroheader'
-
+import { SignInButton, currentUser } from '@clerk/nextjs'
+import { Button } from '@/components/ui/button'
 const outfit = Outfit({ subsets: ['latin'] })
 
 
-const Page = () => {
+const Page = async () => {
+    const user = await currentUser();
     return (
         <section className={`${outfit.className} bg-[url('/games/hero-bg.jpg')]`} >
             <div className={` bg-[#060435dd]`} >
@@ -16,7 +18,18 @@ const Page = () => {
                     <div className="md:w-1/2">
                         <div className="uppercase text-sky-300">STREAMPLAY</div>
                         <h1 className="text-gray-200 text-5xl my-2 leading-relaxed">Elevating <span className='text-sky-300 hover:text-cyan-300'>Esports</span> Management to New Heights</h1>
-                        <button className="bg-gray-200/20 text-gray-200 px-5 py-3 rounded-md mt-4">View Tournaments</button>
+                        <button className="bg-gray-200/20 hover:bg-gray-900 text-gray-200 px-5 py-3 rounded-md mt-4">View Streems</button>
+
+                        
+                        
+        {!user && (
+        <SignInButton>
+        <button className="bg-gray-900 hover:bg-gray-200/20 text-gray-200 px-5 py-3 rounded-md mt-4 ml-4">Get Started</button>
+</SignInButton>
+      )}
+
+
+      
                     </div>
                     <div className="md:w-1/2 h-[40rem] px-16 overflow-hidden ">
                         {/* scrolling image grid  */}
