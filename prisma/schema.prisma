@@ -51,7 +51,6 @@ model Organization {
   updatedAt        DateTime  @updatedAt
 }
 
-
 model Stream {
   id           String  @id @default(uuid())
   name         String  @db.Text
@@ -105,4 +104,3 @@ model Block {
   @@index([blockerId])
   @@index([blockedId])
 }
-
