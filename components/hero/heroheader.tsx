@@ -19,10 +19,10 @@ const HeroHeader = () => {
 
         <Image src="/hero-img.png" alt="logo" width={140} height={140} />
 
-        <Link href={'tournaments'} className='tracking-wider'>
+        <Link href={'about'} className='tracking-wider'>
           About Us
         </Link>
-        <Link href={'tournaments'} className='tracking-wider'>
+        <Link href={'contactus'} className='tracking-wider'>
           Contact Us
         </Link>
 
