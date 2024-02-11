@@ -27,12 +27,8 @@ model User {
 
   stream Stream?
 
-  tournaments Tournament[] // Added tournaments relation
-
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-
-  @@index([organizationId])
 }
 
 model Organization {
