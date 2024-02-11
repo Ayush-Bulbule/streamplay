@@ -27,6 +27,8 @@ model User {
 
   stream Stream?
 
+  tournaments Tournament[] // Added tournaments relation
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -34,21 +36,15 @@ model User {
 }
 
 model Organization {
-  id               String    @id @default(uuid())
-  name             String
-  description      String
-  imageUrl         String?   @db.Text
-  email            String?   @unique
-  location         String?
-  foundingDate     DateTime?
-  contactPerson    String?
-  contactEmail     String? 
-  contactPhone     String? 
-  users            User[]
+  id       String  @id @default(uuid())
+  name     String
+  desc     String
+  imageUrl String? @db.Text
 
+  users User[] // One-to-many relationship
 
-  createdAt        DateTime  @default(now())
-  updatedAt        DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Stream {
@@ -104,3 +100,5 @@ model Block {
   @@index([blockerId])
   @@index([blockedId])
 }
+
+// 
