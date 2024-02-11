@@ -6,85 +6,10 @@ import HeroHeader from "@/components/hero/heroheader";
 const outfit = Outfit({ subsets: ["latin"] });
 
 
-interface TeamDetailsProps {
-    img: string;
-    name: string;
-  }
-  const TeamDetails: React.FC<TeamDetailsProps> = ({ img, name }) => {
-    return(
-      <>
-        <div>
-          <div className="shadow-three rounded-sm  p-6 lg:mt-0 ">
-              <div className="relative h-20 w-20 overflow-hidden rounded-full ml-6">
-                          <Image
-                            src={`/images/about/${img}`}
-                            alt="author"
-                            fill
-                          />
-              </div>
-              </div>
-                  <div className="w-full flex ml-4">
-                        <span className="text-base font-large text-body-color pl-4">
-                             {name}
-                             <span className="flex justify-center items-center"><p>PICT</p></span>
-                        </span>
-                   </div>
-                             
-        </div>
-      </>
-    )
-}
+
 const AboutPage = () => {
   return (
-    // <section className={`${outfit.className} bg-[url('/images/hero-bg.jpg')]`}>
-    //   <div className={` bg-slate-900`}>
-    //   <HeroHeader/>
-    //     <div className="font-inter container flex h-screen max-w-screen-2xl -mt-36 items-center justify-center">
-    //       <div className="md:w-1/2">
-    //         <h1 className="my-2 text-5xl leading-relaxed text-gray-200">
-    //           <span className="text-sky-300 hover:text-cyan-300">About Us</span>{" "}
-    //         </h1>
-    //         <div>
-    //          <p className="text-justify"><span className="ml-20">Welcome to Ant Esport, the leading provider of innovative</span>
-    //           solutions for the esports community. At Ant Esport, we are
-    //           dedicated to revolutionizing the way esports tournaments are
-    //           organized and managed. With a passion for gaming and a commitment
-    //           to excellence, our team brings together years of experience in
-    //           technology, gaming, and event management. We understand the unique
-    //           needs and challenges of the esports industry, and we are committed
-    //           to providing cutting-edge solutions to address them.</p>{"    "}
-    //           <p className="text-justify"><span className="ml-20">Our mission is to empower tournament organizers, teams, and players with the</span>
-    //           tools they need to succeed in the fast-paced world of esports.
-    //           Whether you're a seasoned professional or just starting out, our
-    //           platform offers a comprehensive suite of features designed to
-    //           streamline tournament management and enhance the overall esports
-    //           experience.</p>{"    "}
-    //           <p className="text-justify">
-    //           <span className="ml-20">From seamless team registration to efficient match</span>
-    //           scheduling, live streaming integration, and real-time score
-    //           tracking, our platform provides everything you need to organize,
-    //           manage, and participate in esports tournaments with ease. Join us
-    //           in shaping the future of esports. Together, we can take your
-    //           tournament experience to the next level. Get started with Ant
-    //           Esport today!
-    //         </p>
-    //         </div>
-    //         <div className="flex justify-center items-start flex-col">
-    //         <h1 className="my-2 text-2xl leading-relaxed text-gray-200">
-    //           <span className="text-sky-300 hover:text-cyan-300">Who We Are ? </span>{" "}
-    //         </h1>
-    //         <div className="flex w-full justify-between items-center ">
-    //         <TeamDetails img="ayush.jpg" name="Ayush Bulbule"/>
-    //         <TeamDetails img="pranay.jpg" name="Pranay Chavhan"/>
-    //         <TeamDetails img="yadh.jpg" name="Yadhnesh Gangurde"/>
-    //         <TeamDetails img="sumit.jpg" name="Sumati Suryavanshi"/>
-    //         </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
-
+   
 
    <>
    
@@ -96,15 +21,15 @@ const AboutPage = () => {
                 <div className="w-full px-4 mb-10 xl:w-1/2 lg:mb-8">
                     <div className="flex flex-wrap">
                         <div className="w-full px-4 md:w-1/2">
-                            <img src="https://i.postimg.cc/YCJW7jv8/pexels-fauxels-3184357.jpg" alt=""
+                            <Image src="https://i.postImage.cc/YCJW7jv8/pexels-fauxels-3184357.jpg" alt=""
                                 className="object-cover w-full mb-6 rounded-lg h-80"/>
-                            <img src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg" alt=""
+                            <Image src="https://i.postImage.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg" alt=""
                                 className="object-cover w-full rounded-lg h-80"/>
                         </div>
                         <div className="w-full px-4 md:w-1/2 xl:mt-11">
-                            <img src="https://i.postimg.cc/sXJQ5cw0/pexels-pixabay-256455-1.jpg" alt=""
+                            <Image src="https://i.postImage.cc/sXJQ5cw0/pexels-pixabay-256455-1.jpg" alt=""
                                 className="object-cover w-full mb-6 rounded-lg h-80"/>
-                            <img src="https://i.postimg.cc/vHTg6593/aqq.jpg" alt=""
+                            <Image src="https://i.postImage.cc/vHTg6593/aqq.jpg" alt=""
                                 className="object-cover w-full rounded-lg h-80"/>
                         </div>
                     </div>
@@ -178,12 +103,12 @@ const AboutPage = () => {
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-20">
       <h1 className="text-2xl font-medium title-font mb-4 text-gray-300">OUR TEAM</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably havent heard of them.</p>
     </div>
     <div className="flex flex-wrap -m-4">
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/85397500?s=400&u=9f596e30e737d3066f7900e842bb7493e9f2a783&v=4"/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/85397500?s=400&u=9f596e30e737d3066f7900e842bb7493e9f2a783&v=4"/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-200">Pranay Chavhan</h2>
             <h3 className="text-gray-500 mb-3">Full stack Developer</h3>
@@ -210,7 +135,7 @@ const AboutPage = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/69710917?v=4"/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/69710917?v=4"/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-200">Ayush Bulbule</h2>
             <h3 className="text-gray-500 mb-3">UI Developer</h3>
@@ -237,7 +162,7 @@ const AboutPage = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/111428696?v=4"/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://avatars.githubusercontent.com/u/111428696?v=4"/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-200">Yadhnesh Gangurde</h2>
             <h3 className="text-gray-500 mb-3">UI Developer</h3>
@@ -264,7 +189,7 @@ const AboutPage = () => {
       </div>
       <div className="p-4 lg:w-1/4 md:w-1/2">
         <div className="h-full flex flex-col items-center text-center">
-          <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203"/>
+          <Image alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203"/>
           <div className="w-full">
             <h2 className="title-font font-medium text-lg text-gray-200">Sumati Suryavanshi</h2>
             <h3 className="text-gray-500 mb-3">UI Developer</h3>

@@ -3,6 +3,7 @@ import { Outfit } from 'next/font/google'
 import HeroHeader from '../components/hero/heroheader'
 import { SignInButton, currentUser } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 const outfit = Outfit({ subsets: ['latin'] })
 
 
@@ -36,25 +37,26 @@ const Page = async () => {
                         <div className="scroll-grid grid grid-cols-2 h-[46rem] gap-6 relative">
                             <div className="grid gap-6 ">
                                 <div className="w-full">
-                                    <img src="/games/cos.jpg" alt="COD" className="w-full rounded-xl" />
+                                    
+                                    <Image src="/games/cos.jpg" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full">
-                                    <img src="/games/cod.jpeg" alt="COD" className="w-full rounded-xl" />
+                                    <Image src="/games/cod.jpeg" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full">
-                                    <img src="/games/ff.jpg" alt="COD" className="w-full rounded-xl" />
+                                    <Image src="/games/ff.jpg" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full h-32"></div>
                             </div>
                             <div className="grid gap-6 ">
                                 <div className="w-full">
-                                    <img src="/games/valorent.jpg" alt="COD" className="w-full rounded-xl" />
+                                    <Image src="/games/valorent.jpg" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full">
-                                    <img src="/games/lol.jpg" alt="COD" className="w-full rounded-xl" />
+                                    <Image src="/games/lol.jpg" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full">
-                                    <img src="/games/pubg.webp" alt="COD" className="w-full rounded-xl" />
+                                    <Image src="/games/pubg.webp" alt="COD" className="w-full rounded-xl" />
                                 </div>
                                 <div className="w-full h-32"></div>
                             </div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
@@ -55,7 +56,8 @@ const FormCreateOrg = () => {
       <div className="-mx-4 flex flex-wrap">
 
         <div className="lg:w-5/12 xl:w-4/12 py-24">
-          <img src="/gamingboy.svg" alt="/gamingboy" />
+          <Image src="/gamingboy.svg" alt="/gamingboy" />
+          
         </div>
         <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
           <div
